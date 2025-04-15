@@ -8,7 +8,7 @@ if __name__ == "__main__":
     parser.add_argument("--mode", type=str, default="challenge")
     parser.add_argument("--opponent", type=str, default=None)
     parser.add_argument("--name", type=str)
-    parser.add_argument("--n_battles", type=int, default=1)
+    parser.add_argument("--n-battles", type=int, default=1)
     args = parser.parse_args()
 
     assert (args.opponent is not None) or (args.mode == "accept_challenge"), "Opponent must be provided if mode is challenge"
