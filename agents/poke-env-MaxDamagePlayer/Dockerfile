@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir poke-env
 WORKDIR /app
 
 # Copy script
-COPY agents/poke-env:SimpleHeuristicPlayer/start_agent.py .
+COPY agents/poke-env-MaxDamagePlayer/start_agent.py .
 
 # Default command
 ENTRYPOINT ["python", "start_agent.py"]
